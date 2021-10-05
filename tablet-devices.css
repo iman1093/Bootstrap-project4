@@ -1,0 +1,22 @@
+.Header {
+    background-color:rgb(114, 118, 124);
+    height: 8vh;
+}
+
+#Left {
+    width: 20%;
+    text-align: center;
+    background-color: rgb(190, 186, 180);
+}
+
+/* center */
+article {
+    width: 80%;
+    background-color: rgb(235, 215, 201);
+}
+
+#Right {
+    display: none;
+   
+    
+}

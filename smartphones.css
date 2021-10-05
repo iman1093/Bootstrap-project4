@@ -1,0 +1,19 @@
+.Header {
+    background-color:rgb(114, 118, 124);
+    height: 8vh;
+}
+
+#Left {
+    display: none;
+}
+
+/* center */
+article {
+    width: 100%;
+    background-color: rgb(201, 219, 235);
+}
+
+#Right {
+
+    display: none;
+}

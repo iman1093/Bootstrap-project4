@@ -1,0 +1,29 @@
+      body
+    {
+    display: flex;
+   /* flex-wrap: wrap; */
+    flex-direction: column;
+    
+     }
+
+
+      #main>nav
+        {
+           
+            display: none;
+        }
+
+        #Right {
+            width: 100%;
+          
+       
+        }
+
+        
+      /* center */
+       article {
+       width: 80%;
+       background-color: rgb(201, 219, 235);
+       
+      }
+        

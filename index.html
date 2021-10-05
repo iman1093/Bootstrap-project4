@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        #main {
+            display: flex;
+            /* flex-grow:1 , flex-shrink:1 ,flex-basis:0 */
+            flex: 1;
+        }
+
+        #main>article {
+            flex: 1;
+        }
+
+        #main>aside {
+            flex: 0 0 15vw;
+            background-color: rgb(190, 186, 180);
+        }
+
+        #main>nav {
+
+            background-color: rgb(189, 175, 175);
+        }
+
+        header {
+            background-color: rgb(114, 118, 124);
+            height: 8vh;
+        }
+
+        nav {
+            background-color: rgb(154, 157, 160);
+            height: 8vh;
+        }
+
+        footer {
+            background-color: rgb(114, 118, 124);
+            height: 5vh;
+            color: red;
+            text-align: center;
+        }
+
+        header,
+        footer,
+        aside,
+        article,
+        nav {
+            padding: 1em;
+        }
+
+        .list1 {
+            display: inline-block;
+
+            margin-left: 250px;
+            text-decoration: underline;
+            color: red;
+        }
+
+        .list1:hover {
+            color: rgb(9, 4, 53);
+        }
+
+        /* .list2
+        {
+            margin: 20px;
+        } */
+        /* .hobbies
+        {
+            margin: 10px;
+            margin-left: 100px;
+        } */
+        #left,
+        #right {
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        #facebook {
+            color: rgb(51, 103, 199);
+            font-size: xx-large;
+            margin: 20px;
+
+
+        }
+
+        #instgram {
+            color: rgb(51, 103, 199);
+            font-size: xx-large;
+            margin: 20px;
+        }
+
+        #logo {
+            color: red;
+            font-size: xx-large;
+            /* margin-left: 600px; */
+
+        }
+
+        #img {
+
+            width: 100%;
+            height: 100px;
+
+            background-image: url('img.jpg');
+            background-repeat: no-repeat;
+
+            background-size: 100% 100%;
+
+        }
+
+        /* tablet */
+
+        @media screen and (max-width: 768px) and (min-width: 479px){
+
+            /* center */
+            article {
+                width: 80vw;
+                background-color: rgb(226, 100, 15);
+            }
+
+            #right {
+                display: none;
+
+            }
+        }
+
+        /* smartphone */
+
+        @media screen and (max-width: 480px) and (min-width: 450px) {
+
+
+
+            /* center */
+            article {
+                width: 100%;
+                background-color: rgb(10, 233, 66);
+            }
+
+            aside {
+
+                display: none;
+            }
+
+        }
+
+        /* hide navigation */
+        @media screen and (max-width: 449px) {
+            nav {
+                display: none;
+            }
+
+            ;
+
+        }
+
+        /* 2 b */
+        @media  screen and (max-width: 375px) {
+
+            article {
+                width: 100%;
+                order: 1;
+
+
+            }
+            
+            #main
+          {
+            flex-direction: column;
+           
+           
+
+          }
+
+          #right{
+            width: 100%;
+
+           bottom: 15vh;
+           order: 3;
+
+
+          }
+          #left
+          {
+            width: 100%;
+
+            bottom: 15vh;
+            order: 2;
+
+          }
+            
+
+            
+         
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="normal-devices.css" />
+        <link rel="stylesheet" href="tablet-devices.css" media='screen and (min-width: 481px) and (max-width: 768px)'>
+        <link rel="stylesheet" href="smartphones.css" media='screen and (max-width: 480px)'>
+        <link rel="stylesheet" href="navigation.css" media='screen and (max-width: 450px)'> -->
+</head>
+
+<body>
+    <header>
+        <div id="logo"><i class="fab fa-reddit"></i></div>
+    </header>
+    <nav>
+
+        <li class="list1">Home</li>
+        <li class="list1">About</li>
+        <li class="list1">Contact</li>
+
+    </nav>
+    <div id="main">
+
+        <aside id="left">
+            MISSION <br> <br>
+            The faculty is committed to provide the best education and scientific research opportunities to upgrade the
+            performance level and the academic and research services to the students and quality assurance,...<br><br>
+
+            my pages online
+            <div id="facebook"><i class="fab fa-facebook"></i></div>
+            <div id="instgram"><i class="fab fa-instagram"></i></div>
+            <div id="img"></div>
+        </aside>
+
+        <article>
+
+            <li class="list2">Name:iman ibeahim</li>
+            <li class="list2">Age:28 Years old</li>
+            <li class="list2">Adress:Aswan,Egypt</li>
+            <li class="list2">Phone:011116222</li>
+            <li class="list2">Faculty:
+                <a href="https://myaccount.google.com/?gar=1">Faculty of Arts Aswan University</a>
+            </li>
+            <li class="list2">Hobbies :
+            <li class="hobbies">playing music</li>
+            <li class="hobbies">watching movies</li>
+            <li class="hobbies">traveling</li>
+
+            </li>
+            <li>Mail:
+                <a href="https://myaccount.google.com/?gar=1">go to gmail mail</a>
+            </li>
+
+
+
+        </article>
+        <aside id="right">GOALS <br><br>
+            1-Helping in progressing the education by providing study halls with
+            modern educational methods and utilizing these techniques in learning modern languages of the faculty.
+
+            2-Confirming Quality and Accreditation.
+            3-Creating an educational climate based on scientific research encourages students to do their best to
+            achieve the required quality of students’ lives.
+
+
+            <br><br><br><br>
+
+
+            <video width="400" controls>
+                <source src="voyager.mp4" type="video/mp4">
+                <source src="voyager.mp4" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+            <br>
+        </aside>
+    </div>
+    <footer>CopyRights are Reserved to ITI</footer>
+</body>
+
+</html>
